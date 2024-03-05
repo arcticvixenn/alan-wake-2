@@ -1,295 +1,481 @@
+@charset "UTF-8";
+body {
+  background-color: #212922;
+  /* Колір заднього фону */
+  color: #c7ccc7;
+  /* Колір тексту */
+}
+
 /* Стилі для заголовка */
 header h1 {
-    color: #333; /* Колір тексту */
-    text-align: center; /* Вирівнювання по центру */
-    font-size: 36px; /* Розмір шрифту */
-    font-weight: bold; /* Жирний шрифт */
-    text-transform: uppercase; /* Перетворення тексту на великі літери */
+  color: #a7b5a5;
+  /* Колір тексту */
+  text-align: center;
+  /* Вирівнювання по центру */
+  font-size: 36px;
+  /* Розмір шрифту */
+  font-weight: bold;
+  /* Жирний шрифт */
+  text-transform: uppercase;
+  /* Перетворення тексту на великі літери */
 }
 
 /* Стилі для опису гри */
 .description {
-    background-color: #f0f0f0; /* Колір фону */
-    padding: 20px; /* Відступи всередині елементу */
-    margin-bottom: 20px; /* Відступ знизу */
+  background-color: #263126;
+  /* Колір фону */
+  padding: 20px;
+  /* Відступи всередині елементу */
+  margin-bottom: 20px;
+  /* Відступ знизу */
 }
 
 /* Стилі для таблиці */
 table {
-    width: 100%; /* Ширина таблиці */
-    border-collapse: collapse; /* Злиття рамок */
+  width: 100%;
+  /* Ширина таблиці */
+  border-collapse: collapse;
+  /* Злиття рамок */
+  border: 2px solid #c8a4a4;
+  /* Товщина та колір рамок */
+  padding: 8px;
+  /* Відступи всередині комірок */
+  text-align: left;
+  /* Вирівнювання тексту по лівому краю */
 }
 
-table, th, td {
-    border: 1px solid #ddd; /* Товщина та колір рамок */
-    padding: 8px; /* Відступи всередині комірок */
-    text-align: left; /* Вирівнювання тексту по лівому краю */
+th, td {
+  border: 2px solid #c8a4a4;
+  /* Товщина та колір рамок */
+  padding: 8px;
+  /* Відступи всередині комірок */
+  text-align: left;
+  /* Вирівнювання тексту по лівому краю */
 }
 
 /* Стилі для галереї */
 .responsive {
-    padding: 0 6px; /* Відступи по боках */
-    float: left; /* Обтікання зліва */
-    width: 33.33%; /* Ширина блоку галереї */
+  padding: 0 6px;
+  /* Відступи по боках */
+  float: left;
+  /* Обтікання зліва */
+  width: 33.33%;
+  /* Ширина блоку галереї */
 }
 
 .gallery {
-    margin: 10px; /* Зовнішні відступи блоку галереї */
-    border: 1px solid #ccc; /* Рамка блоку галереї */
-    float: left; /* Обтікання зліва */
-    transition: transform 0.5s ease; /* Анімація при наведенні */
+  margin: 10px;
+  /* Зовнішні відступи блоку галереї */
+  border: 1px solid #ccc;
+  /* Рамка блоку галереї */
+  float: left;
+  /* Обтікання зліва */
+  transition: transform 0.5s ease;
+  /* Анімація при наведенні */
 }
-
-
-
-
 .gallery:hover {
-    transform: scale(1.05); /* Збільшення розміру при наведенні */
+  transform: scale(1.05);
+  /* Збільшення розміру при наведенні */
 }
-
 .gallery img {
-    width: 100%; /* Заповнення всієї ширини блоку */
-    height: auto; /* Автоматична висота */
+  width: 100%;
+  /* Заповнення всієї ширини блоку */
+  height: auto;
+  /* Автоматична висота */
 }
 
 .clearfix {
-    clear: both; /* Очистка обтікання */
+  clear: both;
+  /* Очистка обтікання */
 }
 
 /* Стилі для списків */
 ul {
-    list-style-type: none; /* Видалення маркерів списку */
-    padding-left: 0; /* Відступи зліва */
+  list-style-type: none;
+  /* Видалення маркерів списку */
+  padding-left: 0;
+  /* Відступи зліва */
 }
-
 ul li {
-    margin-bottom: 10px; /* Відступи знизу */
-    font-size: 18px; /* Розмір шрифту */
+  margin-bottom: 10px;
+  /* Відступи знизу */
+  font-size: 18px;
+  /* Розмір шрифту */
 }
-
 ul li ul {
-    margin-top: 5px; /* Відступи зверху */
-    margin-left: 20px; /* Відступи зліва */
+  margin-top: 5px;
+  /* Відступи зверху */
+  margin-left: 20px;
+  /* Відступи зліва */
 }
 
 /* Стилі для посилання */
 a {
-    text-decoration: none; /* Видалення підкреслення */
-    color: #007bff; /* Колір тексту */
-    font-weight: bold; /* Жирний шрифт */
+  text-decoration: none;
+  /* Видалення підкреслення */
+  color: #c26767;
+  /* Колір тексту */
+  font-weight: bold;
+  /* Жирний шрифт */
 }
-
 a:hover {
-    color: #0056b3; /* Колір тексту при наведенні */
+  color: #00b32a;
+  /* Колір тексту при наведенні */
 }
 
 /*# зображення */
 div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
+  border: 1px solid #ccc;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
   .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-
-  .Start {
-    height: 128px;
-    transition: height 0.5s ease; /* Додали перехід */
+.Start {
+  height: 128px;
+  transition: height 0.5s ease;
+  /* Додали перехід */
 }
 
 /* Стилі для тексту */
 body {
-    font-family: Arial, sans-serif; /* Встановлення шрифту */
-    line-height: 1.6; /* Висота рядка */
+  font-family: Arial, sans-serif;
+  /* Встановлення шрифту */
+  line-height: 1.6;
+  /* Висота рядка */
 }
 
 /* Стилі для box-моделі */
 .description {
-    box-sizing: border-box; /* Урахування padding та border в обчисленні ширини та висоти */
+  box-sizing: border-box;
+  /* Урахування padding та border в обчисленні ширини та висоти */
 }
 
 /* Стилі для гіперпосилань */
 a {
-    cursor: pointer; /* Зміна форми курсору при наведенні */
+  cursor: pointer;
+  /* Зміна форми курсору при наведенні */
 }
 
 /* Стилі для списків */
 ul {
-    margin: 0; /* Відсутність зовнішніх відступів */
-    padding: 0; /* Відсутність внутрішніх відступів */
+  margin: 0;
+  /* Відсутність зовнішніх відступів */
+  padding: 0;
+  /* Відсутність внутрішніх відступів */
 }
 
 /* Стилі для display та inline-block */
 .gallery {
-    display: inline-block; /* Відображення як блок, але вирівнюється по базовій лінії */
+  display: inline-block;
+  /* Відображення як блок, але вирівнюється по базовій лінії */
+  overflow: hidden;
+  /* Сховати зайвий контент, який виходить за межі */
 }
 
 /* Стилі для overflow */
-.gallery {
-    overflow: hidden; /* Сховати зайвий контент, який виходить за межі */
-}
-
 /* Стилі для pseudo-class */
 a:hover {
-    color: #ff0000; /* Зміна кольору тексту при наведенні */
+  color: #ff0000;
+  /* Зміна кольору тексту при наведенні */
 }
-
-
-
 
 /* Стилі для форми */
 .form-container {
-    max-width: 500px; /* Максимальна ширина контейнера форми */
-    margin: 0 auto; /* Центрування контейнера форми */
-    padding: 20px; /* Внутрішні відступи */
-    border: 1px solid #ccc; /* Рамка форми */
-    border-radius: 5px; /* Закруглені кути форми */
-    background-color: #f9f9f9; /* Колір фону */
+  max-width: 500px;
+  /* Максимальна ширина контейнера форми */
+  margin: 0 auto;
+  /* Центрування контейнера форми */
+  padding: 20px;
+  /* Внутрішні відступи */
+  border: 1px solid #687169;
+  /* Рамка форми */
+  border-radius: 5px;
+  /* Закруглені кути форми */
+  background-color: #6c776a;
+  /* Колір фону */
 }
-
-/* Стилі для заголовка форми */
 .form-container h2 {
-    text-align: center; /* Вирівнювання по центру */
+  text-align: center;
+  /* Вирівнювання по центру */
 }
-
-/* Стилі для полів вводу */
-.form-container input[type="text"],
-.form-container input[type="password"],
-.form-container input[type="file"],
-.form-container textarea,
-.form-container select {
-    width: 100%; /* Заповнення всієї ширини контейнера */
-    padding: 10px; /* Внутрішні відступи */
-    margin-bottom: 10px; /* Відступи знизу */
-    border: 1px solid #ccc; /* Рамка поля вводу */
-    border-radius: 3px; /* Закруглені кути поля вводу */
-    box-sizing: border-box; /* Урахування padding та border в обчисленні ширини та висоти */
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=file] {
+  width: 100%;
+  /* Заповнення всієї ширини контейнера */
+  padding: 10px;
+  /* Внутрішні відступи */
+  margin-bottom: 10px;
+  /* Відступи знизу */
+  border: 1px solid #ccc;
+  /* Рамка поля вводу */
+  border-radius: 3px;
+  /* Закруглені кути поля вводу */
+  box-sizing: border-box;
+  /* Урахування padding та border в обчисленні ширини та висоти */
 }
-
-/* Стилі для радіо-кнопок та прапорців */
-.form-container input[type="radio"],
-.form-container input[type="checkbox"] {
-    margin-right: 5px; /* Відступ зправа */
+.form-container textarea, .form-container select {
+  width: 100%;
+  /* Заповнення всієї ширини контейнера */
+  padding: 10px;
+  /* Внутрішні відступи */
+  margin-bottom: 10px;
+  /* Відступи знизу */
+  border: 1px solid #ccc;
+  /* Рамка поля вводу */
+  border-radius: 3px;
+  /* Закруглені кути поля вводу */
+  box-sizing: border-box;
+  /* Урахування padding та border в обчисленні ширини та висоти */
 }
-
-/* Стилі для кнопок */
-.form-container input[type="submit"],
-.form-container input[type="reset"] {
-    width: 49%; /* Ширина кнопок */
-    padding: 10px; /* Внутрішні відступи */
-    border: none; /* Відсутність рамки */
-    border-radius: 3px; /* Закруглені кути */
-    background-color: #007bff; /* Колір фону */
-    color: #fff; /* Колір тексту */
-    cursor: pointer; /* Зміна форми курсору */
-    transition: background-color 0.3s; /* Плавна зміна кольору фону */
+.form-container input[type=radio], .form-container input[type=checkbox] {
+  margin-right: 5px;
+  /* Відступ зправа */
 }
-
-/* Стилі для кнопок при наведенні */
-.form-container input[type="submit"]:hover,
-.form-container input[type="reset"]:hover {
-    background-color: #0056b3; /* Колір фону при наведенні */
+.form-container input[type=submit], .form-container input[type=reset] {
+  width: 49%;
+  /* Ширина кнопок */
+  padding: 10px;
+  /* Внутрішні відступи */
+  border: none;
+  /* Відсутність рамки */
+  border-radius: 3px;
+  /* Закруглені кути */
+  background-color: #263f1c;
+  /* Колір фону */
+  color: #fff;
+  /* Колір тексту */
+  cursor: pointer;
+  /* Зміна форми курсору */
+  transition: background-color 0.3s;
+  /* Плавна зміна кольору фону */
 }
-
-/* Стилі для текстового блоку */
+.form-container input[type=submit]:hover, .form-container input[type=reset]:hover {
+  background-color: #8b6c6c;
+  /* Колір фону при наведенні */
+}
 .form-container label {
-    display: block; /* Відображення як блок */
-    margin-bottom: 5px; /* Відступи знизу */
+  display: block;
+  /* Відображення як блок */
+  margin-bottom: 5px;
+  /* Відступи знизу */
+}
+.form-container label + input[type=text], .form-container label + input[type=password], .form-container label + input[type=file] {
+  margin-top: 5px;
+  /* Відступи зверху */
+}
+.form-container label + textarea, .form-container label + select {
+  margin-top: 5px;
+  /* Відступи зверху */
 }
 
-/* Стилі для текстового блоку з приміткою */
-.form-container label + input[type="text"],
-.form-container label + input[type="password"],
-.form-container label + input[type="file"],
-.form-container label + textarea,
-.form-container label + select {
-    margin-top: 5px; /* Відступи зверху */
-}
-
-
-
-/* Стилі для анімації появи хедера */
 header.fadeIn {
-    opacity: 0; /* Початкова прозорість: 0 */
-    animation: fadeInAnimation 1s ease-in-out forwards; /* Анімація з тривалістю 1 секунда */
+  opacity: 0;
+  /* Початкова прозорість: 0 */
+  animation: fadeInAnimation 1s ease-in-out forwards;
+  /* Анімація з тривалістю 1 секунда */
 }
 
 /* Ключові кадри для анімації */
 @keyframes fadeInAnimation {
-    from {
-        opacity: 0; /* Прозорість від 0 */
-    }
-    to {
-        opacity: 1; /* Прозорість до 1 */
-    }
+  from {
+    opacity: 0;
+    /* Прозорість від 0 */
+  }
+  to {
+    opacity: 1;
+    /* Прозорість до 1 */
+  }
 }
-
-
-
-
 /* Стилі для анімації появи зображень */
 .gallery {
-    opacity: 0; /* Початкова прозорість: 0 */
-    transition: opacity 2s; /* Анімація з тривалістю 2 секунди */
+  opacity: 0;
+  /* Початкова прозорість: 0 */
+  transition: opacity 2s;
+  /* Анімація з тривалістю 2 секунди */
 }
-
 .gallery.loaded {
-    opacity: 1; /* Прозорість до 1 */
+  opacity: 1;
+  /* Прозорість до 1 */
 }
 
-
+.content-block {
+  margin-bottom: 100px; /* Додати відступ внизу блоку контенту */
+}
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    opacity: 0.8;
-  }
-  footer a:hover {
-    color: #ff6600;
-  }
+  background-color: #3f5a45;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
 
+footer a:hover {
+  color: #dca2a2;
+}
+
+.container {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Розтягнути колонки, щоб зайняти всю доступну ширину */
+}
+
+/* Додаткові стилі для кожної колонки (зображення, текст і т.д.) */
+.left-column {
+  /* Стилі для лівої колонки */
+  margin-right: 20px; /* Відступ справа */
+}
+
+.right-column {
+  /* Стилі для правої колонки */
+  margin-left: 20px; /* Відступ зліва */
+}
+
+.alan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Розташувати елементи в дві колонки */
+  list-style: none;
+  padding: 0;
+}
+
+.alan-list li {
+  width: calc(50% - 10px); /* Розташувати кожен елемент в половині контейнера */
+  margin-bottom: 20px; /* Додати відступ між елементами */
+}
+
+.category {
+  color: #fff0bb;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Основні стилі для кнопки меню */
+.menu-toggle {
+  display: none; /* За замовчуванням ховаємо кнопку меню */
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Змінюємо колір при наведенні на кнопку */
+}
+
+/* Стилі для мобільних екранів */
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none; /* Приховуємо меню на малих екранах за замовчуванням */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-toggle {
+    display: block; /* Показуємо кнопку меню тільки на малих екранах */
+  }
+}
+/* Стилі для широких екранів */
+@media screen and (min-width: 601px) {
+  .menu-toggle {
+    display: none; /* Ховаємо кнопку меню на широких екранах */
+  }
+  .menu {
+    display: flex; /* Показуємо меню по горизонталі на великих екранах */
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Плавна анімація зміни кольору */
+  }
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Змінюємо колір при наведенні на пункт меню */
+  }
+}
+/* Стилі для контейнера фото */
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* Відступи між фото */
+}
+
+/* Стилі для кожного фото */
+.main-photo {
+  width: calc(50% - 20px); /* Розрахунок ширини для кожного фото */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Простір між фото */
+}
+
+/* Стилі для мобільних екранів */
+@media screen and (max-width: 600px) {
+  .main-photo {
+    width: 100%; /* Фото займають 100% ширини на малих екранах */
+  }
+}/*# sourceMappingURL=style.css.map */

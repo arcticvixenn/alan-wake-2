@@ -10,12 +10,21 @@
 <body>
     <header class="fadeIn">
         <h1>Alan Wake</h1>
+        <button class="menu-toggle">&#9776; Меню</button> 
+        <nav>
+            <ul class="Меню">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="description fadeIn"> 
         <h2>Опис гри</h2>
         <p>Alan Wake - це пригодницька відеогра, розроблена компанією Remedy Entertainment та випущена в 2010 році. Гра поєднує в собі елементи від першої особи, вирішення головоломок та екшен.</p>
     </div>
+
 
 
     <script>
@@ -50,11 +59,18 @@
     <div>
         <h2>Сюжет</h2>
         <p><strong>Alan Wake 2 — це гра жахів на виживання від третьої особи . Гравці грають за Алана Вейка або Сагу Андерсон у двох окремих історіях для одного гравця , які можна грати в будь-якому порядку, який вибере гравець, хоча початкову та кінцеву послідовності можна грати лише за Сагу та Алана відповідно.</strong></p>
+     <div class="photos-container">
+        <img src="images/image2.jpg" class="main-photo">
+        <img src="images/image1.jpg" alt="Опис фотографії" class="main-photo">
+    </div>  
         <p><em>Гра починається з монологу Алана, який показує йому діру, що світиться на лобі. Оголений чоловік виходить із темних берегів озера Каулдрон, переживаючи видіння чоловіка, який сильно кричить, перш ніж його знаходять, і група чоловіків у масках оленів вирізає йому серце.
 
             Спеціальний агент ФБР Сага Андерсон і її партнер Алекс Кейсі відправляються в місто Брайт-Фоллз для розслідування серії ритуальних вбивств. Вони розслідують останню жертву, оголеного чоловіка, який виявляється колишнім агентом ФБР Робертом Найтінгейлом. Вважається, що його вбила група, яка називає себе «Культ дерева». Окрім трупа Найтінгейла, Сага знаходить таємничу сторінку рукопису, яка, здається, передбачає майбутнє. Перебуваючи в місті, вони зустрічають шерифа Тіма Брейкера, який обіцяє допомогти їхньому розслідуванню, а також офіціантку Роуз Меріголд, яка впізнає Сагу та поводиться так, ніби Сага була місцевою жителькою, незважаючи на те, що це її перший візит у місто. Потім Сага проводить розтин трупа Найтінгейл, але він раптово реанімує і втікає з моргу після таємничого зникнення Брейкера.</em></p>
     </div>
 
+
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q0vNoRhuV_I" frameborder="0" allowfullscreen></iframe>
 
     <h1>Інформація про гру Alan Wake</h1>
     <table>
@@ -139,40 +155,60 @@
       <div class="clearfix"></div>
 
 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/q0vNoRhuV_I" frameborder="0" allowfullscreen></iframe>
+
+
     <h1>Номінації гри Alan Wake</h1>
 
-<ul>
-    <li>Alan Wake 1
-        <ul>
-            <li>Найкраща історія</li>
-            <li>Найкращий головний герой</li>
-            <li>Найкращі графічні ефекти</li>
-            <li>Найкращий саундтрек</li>
-            <li>Найкраща ігрова механіка</li>
-        </ul>
-    </li>
-    <li>Alan Wake 2
-        <ul>
-            <li>Найкраща продовження</li>
-            <li>Найкращий арт-дизайн</li>
-            <li>Найкраща атмосфера</li>
-            <li>Найкращий геймплей</li>
-            <li>Найкращий звуковий дизайн</li>
-        </ul>
-    </li>
-</ul>
-
-
-    <h2>Хочееш взяти участь у розіграші гри?</h2>
-    <h3>Тоді заповни форму</h3>&rarr;
+    <ul class="alan-list">
+        <li>
+            <h3 class="category">Alan Wake 1</h3>
+            <ul>
+                <li class="category">Найкраща історія</li>
+                <li class="category">Найкращий головний герой</li>
+                <li class="category">Найкращі графічні ефекти</li>
+                <li class="category">Найкращий саундтрек</li>
+                <li class="category">Найкраща ігрова механіка</li>
+            </ul>
+        </li>
+        <li>
+            <h3 class="category">Alan Wake 2</h3>
+            <ul>
+                <li class="category">Найкраща продовження</li>
+                <li class="category">Найкращий арт-дизайн</li>
+                <li class="category">Найкраща атмосфера</li>
+                <li class="category">Найкращий геймплей</li>
+                <li class="category">Найкращий звуковий дизайн</li>
+            </ul>
+        </li>
+    </ul>
     
 
 
+
+    <h2>Хочеш взяти участь у розіграші гри?</h2>
+    <h3>Тоді заповни форму</h3>&darr;
+    
+
+ <div class="content-block">
     <a href="form.html">Тут</a>
+ </div>
+    
 
     <footer>
         <p>&copy; 2024 Alan Wake Fan Club</p>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('nav .menu');
+        
+            menuToggle.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 
 </body>
 </html>    
