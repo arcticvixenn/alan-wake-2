@@ -40,6 +40,9 @@ table, th, td {
     transition: transform 0.5s ease; /* Анімація при наведенні */
 }
 
+
+
+
 .gallery:hover {
     transform: scale(1.05); /* Збільшення розміру при наведенні */
 }
@@ -171,11 +174,6 @@ a:hover {
     color: #ff0000; /* Зміна кольору тексту при наведенні */
 }
 
-/* Стилі для opacity */
-.gallery {
-    opacity: 0.8; /* Прозорість елементу */
-}
-
 
 
 
@@ -250,4 +248,48 @@ a:hover {
 
 
 
+/* Стилі для анімації появи хедера */
+header.fadeIn {
+    opacity: 0; /* Початкова прозорість: 0 */
+    animation: fadeInAnimation 1s ease-in-out forwards; /* Анімація з тривалістю 1 секунда */
+}
+
+/* Ключові кадри для анімації */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Прозорість від 0 */
+    }
+    to {
+        opacity: 1; /* Прозорість до 1 */
+    }
+}
+
+
+
+
+/* Стилі для анімації появи зображень */
+.gallery {
+    opacity: 0; /* Початкова прозорість: 0 */
+    transition: opacity 2s; /* Анімація з тривалістю 2 секунди */
+}
+
+.gallery.loaded {
+    opacity: 1; /* Прозорість до 1 */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+  }
+  footer a:hover {
+    color: #ff6600;
+  }
 
