@@ -1,0 +1,253 @@
+/* Стилі для заголовка */
+header h1 {
+    color: #333; /* Колір тексту */
+    text-align: center; /* Вирівнювання по центру */
+    font-size: 36px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    text-transform: uppercase; /* Перетворення тексту на великі літери */
+}
+
+/* Стилі для опису гри */
+.description {
+    background-color: #f0f0f0; /* Колір фону */
+    padding: 20px; /* Відступи всередині елементу */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%; /* Ширина таблиці */
+    border-collapse: collapse; /* Злиття рамок */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Товщина та колір рамок */
+    padding: 8px; /* Відступи всередині комірок */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+/* Стилі для галереї */
+.responsive {
+    padding: 0 6px; /* Відступи по боках */
+    float: left; /* Обтікання зліва */
+    width: 33.33%; /* Ширина блоку галереї */
+}
+
+.gallery {
+    margin: 10px; /* Зовнішні відступи блоку галереї */
+    border: 1px solid #ccc; /* Рамка блоку галереї */
+    float: left; /* Обтікання зліва */
+    transition: transform 0.5s ease; /* Анімація при наведенні */
+}
+
+.gallery:hover {
+    transform: scale(1.05); /* Збільшення розміру при наведенні */
+}
+
+.gallery img {
+    width: 100%; /* Заповнення всієї ширини блоку */
+    height: auto; /* Автоматична висота */
+}
+
+.clearfix {
+    clear: both; /* Очистка обтікання */
+}
+
+/* Стилі для списків */
+ul {
+    list-style-type: none; /* Видалення маркерів списку */
+    padding-left: 0; /* Відступи зліва */
+}
+
+ul li {
+    margin-bottom: 10px; /* Відступи знизу */
+    font-size: 18px; /* Розмір шрифту */
+}
+
+ul li ul {
+    margin-top: 5px; /* Відступи зверху */
+    margin-left: 20px; /* Відступи зліва */
+}
+
+/* Стилі для посилання */
+a {
+    text-decoration: none; /* Видалення підкреслення */
+    color: #007bff; /* Колір тексту */
+    font-weight: bold; /* Жирний шрифт */
+}
+
+a:hover {
+    color: #0056b3; /* Колір тексту при наведенні */
+}
+
+/*# зображення */
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .Start {
+    height: 128px;
+    transition: height 0.5s ease; /* Додали перехід */
+}
+
+/* Стилі для тексту */
+body {
+    font-family: Arial, sans-serif; /* Встановлення шрифту */
+    line-height: 1.6; /* Висота рядка */
+}
+
+/* Стилі для box-моделі */
+.description {
+    box-sizing: border-box; /* Урахування padding та border в обчисленні ширини та висоти */
+}
+
+/* Стилі для гіперпосилань */
+a {
+    cursor: pointer; /* Зміна форми курсору при наведенні */
+}
+
+/* Стилі для списків */
+ul {
+    margin: 0; /* Відсутність зовнішніх відступів */
+    padding: 0; /* Відсутність внутрішніх відступів */
+}
+
+/* Стилі для display та inline-block */
+.gallery {
+    display: inline-block; /* Відображення як блок, але вирівнюється по базовій лінії */
+}
+
+/* Стилі для overflow */
+.gallery {
+    overflow: hidden; /* Сховати зайвий контент, який виходить за межі */
+}
+
+/* Стилі для pseudo-class */
+a:hover {
+    color: #ff0000; /* Зміна кольору тексту при наведенні */
+}
+
+/* Стилі для opacity */
+.gallery {
+    opacity: 0.8; /* Прозорість елементу */
+}
+
+
+
+
+/* Стилі для форми */
+.form-container {
+    max-width: 500px; /* Максимальна ширина контейнера форми */
+    margin: 0 auto; /* Центрування контейнера форми */
+    padding: 20px; /* Внутрішні відступи */
+    border: 1px solid #ccc; /* Рамка форми */
+    border-radius: 5px; /* Закруглені кути форми */
+    background-color: #f9f9f9; /* Колір фону */
+}
+
+/* Стилі для заголовка форми */
+.form-container h2 {
+    text-align: center; /* Вирівнювання по центру */
+}
+
+/* Стилі для полів вводу */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="file"],
+.form-container textarea,
+.form-container select {
+    width: 100%; /* Заповнення всієї ширини контейнера */
+    padding: 10px; /* Внутрішні відступи */
+    margin-bottom: 10px; /* Відступи знизу */
+    border: 1px solid #ccc; /* Рамка поля вводу */
+    border-radius: 3px; /* Закруглені кути поля вводу */
+    box-sizing: border-box; /* Урахування padding та border в обчисленні ширини та висоти */
+}
+
+/* Стилі для радіо-кнопок та прапорців */
+.form-container input[type="radio"],
+.form-container input[type="checkbox"] {
+    margin-right: 5px; /* Відступ зправа */
+}
+
+/* Стилі для кнопок */
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    width: 49%; /* Ширина кнопок */
+    padding: 10px; /* Внутрішні відступи */
+    border: none; /* Відсутність рамки */
+    border-radius: 3px; /* Закруглені кути */
+    background-color: #007bff; /* Колір фону */
+    color: #fff; /* Колір тексту */
+    cursor: pointer; /* Зміна форми курсору */
+    transition: background-color 0.3s; /* Плавна зміна кольору фону */
+}
+
+/* Стилі для кнопок при наведенні */
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: #0056b3; /* Колір фону при наведенні */
+}
+
+/* Стилі для текстового блоку */
+.form-container label {
+    display: block; /* Відображення як блок */
+    margin-bottom: 5px; /* Відступи знизу */
+}
+
+/* Стилі для текстового блоку з приміткою */
+.form-container label + input[type="text"],
+.form-container label + input[type="password"],
+.form-container label + input[type="file"],
+.form-container label + textarea,
+.form-container label + select {
+    margin-top: 5px; /* Відступи зверху */
+}
+
+
+
+
