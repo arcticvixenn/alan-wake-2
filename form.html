@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+
+</head>
+<body>
+    <header>
+        <h1>Alan Wake</h1>
+    </header>
+    
+<div class="form-container">
+    <h2>Встигніть взяти участь у розіграші!</h2>
+    <form>
+        <label for="text">Ім'я:</label>
+        <input type="text" id="text" name="text"><br>
+        
+        <label for="password">Прізвище:</label>
+        <input type="password" id="password" name="password"><br>
+        
+        <label for="radio1">Вам вже виповнилось 18?:</label><br>
+        <input type="radio" id="radio1" name="radio" value="option1">
+        <label for="radio1">Так</label><br>
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">Ще ні</label><br>
+
+        <label for="select">Яка Ваша стать?</label>
+        <select id="select" name="select">
+            <option value="option1">Жінка</option>
+            <option value="option2">Чоловік</option>
+            <option value="option2">Без відповіді</option>
+        </select><br>
+        
+        <label for="file">Додайте момент з Вашої улюбленої гри </label>
+        <input type="file" id="file" name="file"><br>
+        
+        <label for="textarea">Додайте коментар</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br>
+        
+
+
+        <label for="checkbox">Підтвердіть свою участь:</label>
+        <input type="checkbox" id="checkbox" name="checkbox"><br>
+        
+        <label for="label">Надішліть форму:</label><br>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 Alan Wake Fan Club</p>
+</footer>
+</body>
+</html>
