@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Хто є розробником гри Alan Wake?",
+    "answers": ["Remedy Entertainment", "Ubisoft", "EA Games", "Bethesda"],
+    "correct_answer": "Remedy Entertainment"
+  },
+  {
+    "question": "У якому році вийшла гра Alan Wake?",
+    "answers": ["2008", "2010", "2012", "2015"],
+    "correct_answer": "2010"
+  },
+  {
+    "question": "Яка назва міста, де відбуваються події гри Alan Wake?",
+    "answers": ["Bright Falls", "Silent Hill", "Raccoon City", "Arkham"],
+    "correct_answer": "Bright Falls"
+  },
+  {
+    "question": "Яка професія у головного героя гри Alan Wake?",
+    "answers": ["Письменник", "Поліцейський", "Лікар", "Вчений"],
+    "correct_answer": "Письменник"
+  },
+  {
+    "question": "Яке знаряддя боротьби головного героя зі злом у грі Alan Wake?",
+    "answers": ["Ліхтар", "Меч", "Стрілецька зброя", "Кий"],
+    "correct_answer": "Ліхтар"
+  }
+]
