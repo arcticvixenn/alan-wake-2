@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Wake Survey Results</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Alan Wake Survey Results</h1>
+    <h2>Фільтрація</h2>
+    <div class="button-group">
+      <button class="btn" onclick="filterByPlatform('xbox360')">Фільтрувати за платформою Xbox 360</button>
+      <button class="btn" onclick="filterByCompletedEpisodes()">Фільтрувати за учасниками, які завершили всі епізоди</button>
+      <button class="btn" onclick="filterByRating(3, 5)">Фільтрувати за оцінкою від 3 до 5</button>
+    </div>
+    <div id="response-container"></div>
+  </div>
+</body>
+</html>
