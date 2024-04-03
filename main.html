@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Wake Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Alan Wake Survey</h1>
+    <form id="survey-form">
+      <label for="platform">На якій платформі ви грали в Alan Wake?</label>
+      <select id="platform" name="platform" class="form-control" autocomplete="platform">
+        <option value="">Виберіть платформу</option>
+        <option value="xbox360">Xbox 360</option>
+        <option value="pc">PC</option>
+        <option value="other">Інше</option>
+      </select>
+
+      <label>Ви грали в будь-які інші ігри письменника-протагоніста?</label>
+      <div class="radio-group">
+        <input type="radio" id="yes" name="other-writer-games" value="yes" class="form-control">
+        <label for="yes">Так</label>
+        <input type="radio" id="no" name="other-writer-games" value="no" class="form-control">
+        <label for="no">Ні</label>
+      </div>
+
+      <label>Які епізоди Alan Wake ви пройшли?</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="episode1" name="completed-episodes" value="episode1" class="form-control">
+        <label for="episode1">Епізод 1</label>
+        <input type="checkbox" id="episode2" name="completed-episodes" value="episode2" class="form-control">
+        <label for="episode2">Епізод 2</label>
+        <input type="checkbox" id="episode3" name="completed-episodes" value="episode3" class="form-control">
+        <label for="episode3">Епізод 3</label>
+        <input type="checkbox" id="episode4" name="completed-episodes" value="episode4" class="form-control">
+        <label for="episode4">Епізод 4</label>
+        <input type="checkbox" id="episode5" name="completed-episodes" value="episode5" class="form-control">
+        <label for="episode5">Епізод 5</label>
+      </div>
+
+      <label for="favorite-character">Хто ваш улюблений персонаж в Alan Wake?</label>
+      <input type="text" id="favorite-character" name="favorite-character" class="form-control" autocomplete="off">
+
+      <label for="rating">Оцініть гру від 1 до 5</label>
+      <input type="range" id="rating" name="rating" min="1" max="5" step="1" class="form-control" autocomplete="off">
+
+      <label for="completion-date">Коли ви завершили проходження Alan Wake?</label>
+      <input type="month" id="completion-date" name="completion-date" class="form-control" autocomplete="completion-date">
+
+      <label for="replay-interest">З яким кольором у Вас асоціюється гра Alan Wake?</label>
+      <input type="color" id="replay-interest" name="replay-interest" value="#00ff00" class="form-control" autocomplete="off">
+
+      <label for="favorite-moment">Який був ваш улюблений момент у грі?</label>
+      <textarea id="favorite-moment" name="favorite-moment" class="form-control" autocomplete="off"></textarea>
+
+      <label for="email">Введіть свій Email (необов'язково)</label>
+      <input type="email" id="email" name="email" class="form-control" autocomplete="email">
+
+      <button type="submit" class="btn">Відправити</button>
+    </form>
+
+    <a href="results.html" class="btn">Переглянути результати</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
